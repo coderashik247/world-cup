@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-section {
+    display: flex;
+    place-items: center;
+    background-color: #161616;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 90px;
+}
+
+.banner-section-left {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+.banner-section-left>h2 {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.banner-section-left>p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 16px 25px;
+    border: none;
+    background-color: #DD0000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.banner-section-right {
+    /* border: 1px solid tomato; */
+    flex: 1;
+}
+
+.banner-section-right img {
+    width: 100%;
+    display: block;
+    height: 70vh;
+}
+
+
+
+@media screen and (max-width:576px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .banner-section {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .banner-section-left {
+        text-align: center;
+    }
+
+    .banner-section-left>h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner-section-left>p {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:1024px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        /* width: 95%; */
+        /* margin: 0 auto; */
+    }
+
+    .banner-section {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .banner-section-left h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .banner-section-left p {
+        width: 100%;
+    }
+}
